@@ -42,8 +42,8 @@ class DatasetGenerator:
             "MOD550 ASSIGNMENT": "Dataset Generation",
             "Student": {
                 "Name": "Urszula Starowicz",
-                "Email": "urszula.starowicz@stud.uis.no",
-                "Github": "urszulastarowicz"
+                "Email": "283591@uis.no",
+                "Github": "SaiPieGiera"
             },
             "Title": "Random Dataset Generation and Analysis",
             "Description": "This dataset consists of two randomly generated datasets that are combined together.",
@@ -54,7 +54,9 @@ class DatasetGenerator:
             "Dataset Details": {
                 "Total Points": data.shape[0],
                 "Dataset 1 Points": dataset_1.shape[0],
-                "Dataset 2 Points": dataset_2.shape[0]
+                "Dataset 2 Points": dataset_2.shape[0],
+                "Mean of combines dataset": data.mean(axis=0).tolist(),
+                "Standard deviation of combined dataset": data.std(axis=0).tolist()
             }
         }
         
