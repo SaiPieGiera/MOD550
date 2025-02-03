@@ -1,16 +1,19 @@
 {
-    "num_points": 200,
-    "noise": 16,
-    "data_shape": [
-        400,
-        2
-    ],
-    "dataset_1_shape": [
-        200,
-        2
-    ],
-    "dataset_2_shape": [
-        200,
-        2
-    ]
+    "MOD550 ASSIGNMENT": "Dataset Generation",
+    "Student": {
+        "Name": "Urszula Starowicz",
+        "Email": "urszula.starowicz@stud.uis.no",
+        "Github": "urszulastarowicz"
+    },
+    "Title": "Random Dataset Generation and Analysis",
+    "Description": "This dataset consists of two randomly generated datasets that are combined together.",
+    "Parameters": {
+        "num_points": 200,
+        "noise_level": 16
+    },
+    "Dataset Details": {
+        "Total Points": 400,
+        "Dataset 1 Points": 200,
+        "Dataset 2 Points": 200
+    }
 }
