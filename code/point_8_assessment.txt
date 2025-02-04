@@ -1,10 +1,4 @@
-import os
-import pandas as pd
-import matplotlib.pyplot as plt
-
-# Point 8: Generate the assessment file
-def generate_assessment_file():
-    assessment_text = """Assigment 1 point 8:
+Assigment 1 point 8:
 Select 3 GitHub/GitLab repositories and make an assessment on the coding standards they use.
 
 author: Urszula Starowicz
@@ -56,45 +50,3 @@ II. Code Formatting and Style
 
 III. Naming Conventions
     - "header" (line 54) should be in UPPER_CASE to indicate it is a constant.
-"""
-    with open("point_8_assessment.txt", "w", encoding="utf-8") as file:
-        file.write(assessment_text)
-    print("Assessment file generated: point_8_assessment.txt")
-
-# Point 7: Generate a plot with metadata and assumed model
-def generate_plot():
-    data_path = os.path.join("..", "data", "Dea")
-    files = [f for f in os.listdir(data_path) if f.endswith(".csv")]
-
-    if not files:
-        print("No CSV files found in the dataset folder.")
-        return
-
-    file_path = os.path.join(data_path, files[0])
-    DATA_FOLDER = pd.read_csv(file_path)
-
-    if DATA_FOLDER.empty:
-        print("The imported dataset is empty.")
-        return
-
-    # Assuming columns: 'x' and 'y' exist in the dataset
-    if 'x' not in DATA_FOLDER.columns or 'y' not in DATA_FOLDER.columns:
-        print("Dataset does not contain expected columns 'x' and 'y'.")
-        return
-
-    # Plot data
-    plt.figure(figsize=(8, 6))
-    plt.scatter(DATA_FOLDER['x'], DATA_FOLDER['y'], label='Imported Data', alpha=0.7)
-
-    plt.xlabel('X values')
-    plt.ylabel('Y values')
-    plt.title('Point 7: Data vs. Assumed Model')
-    plt.legend()
-    plt.grid(True)
-    plt.savefig("point_7_plot.png")
-    plt.show()
-    print("Plot saved as: point_7_plot.png")
-
-if __name__ == "__main__":
-    generate_assessment_file()
-    generate_plot()
