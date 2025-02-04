@@ -15,13 +15,13 @@
         "Total Points": 400,
         "Dataset 1 Points": 200,
         "Dataset 2 Points": 200,
-        "Mean of combines dataset": [
-            0.5110519814025187,
-            0.49572479973493705
+        "Mean of combined dataset": [
+            0.493725505438887,
+            0.48957637387973046
         ],
         "Standard deviation of combined dataset": [
-            0.28046987054759387,
-            0.26690125766667777
+            0.2894302855950384,
+            0.29462988766462106
         ]
     }
 }
